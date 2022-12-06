@@ -1,4 +1,4 @@
-package org.example;
+package com.mavenprojects.firstprojects;
 
 /**
  * Hello world!
@@ -6,15 +6,16 @@ package org.example;
  */
 public class App 
 {
-    public static String ReverseString(String str)
+    public static int findMax( int arr[])
     {
-        String rstr="";
-        char ch;
-        for (int i=0; i<str.length(); i++)
-        {
-            ch= str.charAt(i);
-            rstr= ch+rstr;
-        }
-        return rstr;
+    	int max=arr[0];
+    	for(int i=1;i<arr.length;i++) 
+    	{
+    		if(max<arr[i]) 
+    		{
+    			max=arr[i];
+    		}
+    	}
+    	return max;
     }
 }

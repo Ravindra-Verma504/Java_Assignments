@@ -1,48 +1,29 @@
-package org.example;
-
-//import junit.framework.TestCase;
-//import junit.framework.TestSuite;
-//import junit.framework.Assert;
-
-import org.junit.Test;
+package com.mavenprojects.firstprojects;
 
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
-//    extends TestCase
 {
-//    /**
-//     * Create the test case
-//     *
-//     * @param testName name of the test case
-//     */
-//    public AppTest( String testName )
-//    {
-//        super( testName );
-//    }
-//
-//    /**
-//     * @return the suite of tests being tested
-//     */
-//    public static Test suite()
-//    {
-//        return new TestSuite( AppTest.class );
-//    }
-//
-//    /**
-//     * Rigourous Test :-)
-//     */
-//    public void testApp()
+    /**
+     * Rigorous Test :-)
+     */
+//    @Test
+//    public void shouldAnswerWithTrue()
 //    {
 //        assertTrue( true );
-    @Test
-    public void testReverseString()
-    {
-        assertEquals("ivar" ,App.ReverseString(new String("ravi")));
-    }
-
-
+//    }
+//    public void shouldAnswerWithFalse()
+//    {
+//        assertTrue( false );
+//    }
+	@Test
+	public void testfindMax() 
+	{
+		assertEquals(30,App.findMax(new int[] {1,2,30,4}));
+	}
 }
