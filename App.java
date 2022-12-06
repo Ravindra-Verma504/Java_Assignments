@@ -1,4 +1,4 @@
-package com.example.hello.my_first_system;
+package org.example;
 
 /**
  * Hello world!
@@ -6,8 +6,15 @@ package com.example.hello.my_first_system;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static String ReverseString(String str)
     {
-        System.out.println( "Hello World!" );
+        String rstr="";
+        char ch;
+        for (int i=0; i<str.length(); i++)
+        {
+            ch= str.charAt(i);
+            rstr= ch+rstr;
+        }
+        return rstr;
     }
 }
